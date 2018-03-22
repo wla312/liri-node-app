@@ -33,7 +33,7 @@ var accessSecret = keysFile.twitterKeys.access_token_secret;
 var clientID = keysFile.spotifyKeys.client_id;
 var clientSecret = keysFile.spotifyKeys.client_secret;
 
-// not sure why this works/syntax needs to be like this...
+
 var client = new Twitter({
 	consumer_key: consumerKey,
 	consumer_secret: consumerSecret,
@@ -41,7 +41,6 @@ var client = new Twitter({
 	access_token_secret: accessSecret,
 });
 
-// same deal here, not sure why I couldn't pull directly from keys.js...
 var spotify = new Spotify({
 	id: clientID,
 	secret: clientSecret,
